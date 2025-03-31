@@ -1,9 +1,5 @@
-import Header from "@/components/ui/header";
+import StaffPage from "@/components/ui/staff";
 
 export default function Page(){
-    return (
-        <div>
-            <Header />
-        </div>
-    )
+    return <StaffPage />
 }

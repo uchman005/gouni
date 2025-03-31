@@ -9,8 +9,6 @@ import Carousel from "@/components/ui/carousel";
 import Link from "next/link";
 import { testimonials } from "@/components/data";
 import Image from "next/image";
-import Header from "@/components/ui/header";
-import Footer from "@/components/ui/footer";
 
 export default function Home() {
   useEffect(() => {
@@ -20,7 +18,6 @@ export default function Home() {
   return (
     <div className="bg-gray-100 text-gray-800">
       {/* Header */}
-      <Header />
 
       {/* Hero Section with Carousel */}
       <section className="mt-16">
@@ -102,7 +99,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }

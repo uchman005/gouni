@@ -45,13 +45,13 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <nav className="absolute top-full left-0 w-full bg-white shadow-md md:hidden">
+        <nav className="absolute top-full left-0 w-full bg-white text-gray-800 shadow-md md:hidden">
           <ul className="flex flex-col items-center gap-4 py-4">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  onClick={() => setIsOpen(false)} // Close menu on click
+                  onClick={() => setIsOpen(false)}
                   className={`block py-2 text-lg hover:text-green-700 ${
                     pathname === link.href ? "text-green-700 font-semibold" : ""
                   }`}

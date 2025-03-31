@@ -1,9 +1,5 @@
-import Header from "@/components/ui/header";
+import CoursesPage from "@/components/ui/courses";
 
 export default function Page(){
-    return (
-        <div>
-            <Header />
-        </div>
-    )
+    return <CoursesPage />
 }

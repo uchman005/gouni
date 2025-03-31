@@ -11,8 +11,11 @@ export default function Footer() {
             <nav className="mt-4">
                 <ul className="flex justify-center gap-6 text-gray-400">
                     {navLinks.map((navlink) => (
-                        <li key={navlink.href}><Link href={navlink.href} className={`hover:text-green-700 ${pathname === navlink.href ? "text-green-700 font-semibold" : ""
-                            }`}>{navlink.name}</Link></li>
+                        <li key={navlink.href}>
+                            <Link href={navlink.href} className={`hover:text-green-700 ${pathname === navlink.href ? "text-green-700 font-semibold" : ""}`}>
+                                {navlink.name}
+                            </Link>
+                        </li>
                     ))}
                 </ul>
             </nav>
